@@ -1,0 +1,12 @@
+<ul>
+    @for (game of games(); track $index) {
+        <li (click)="selectGame(game)"> {{game.title}} </li>
+    }
+</ul>
+    @if (selectedGame()) {
+        <div>
+            <h3> {{ selectedGame()?.title || 'No Title' }}</h3>
+        </div>
+    }  @else {
+        <p> Select a Game! </p>
+    }

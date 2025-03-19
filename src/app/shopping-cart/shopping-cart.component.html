@@ -1,0 +1,12 @@
+<ul>
+    @for (cart of carts(); track $index) {
+        <li (click)="selectCart(cart)"> {{ cart.title }} </li>
+    }
+</ul>
+    @if (selectedCart()) {
+        <div>
+            <h3> {{ selectedCart()?.title || 'No Title' }} </h3>
+        </div>
+    } @else {
+        <p> Select an Item! </p>
+    }

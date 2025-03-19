@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+li {
+    padding: 10px 15px;
+    margin: 5px 0;
+    background: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+}
+
+li:hover {
+    background: #e0e0e0;
+}
+
+li:active {
+    background: #d0d0d0;
+}
+
+div {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+    font-family: 'Arial', sans-serif;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
