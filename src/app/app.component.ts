@@ -5,10 +5,11 @@ import { FavoriteBooksComponent } from "./favorite-books/favorite-books.componen
 import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 import { FavoriteGamesComponent } from "./favorite-games/favorite-games.component";
 import { DrinkListComponent } from "./drink-list/drink-list.component";
+import { FavoriteSnacksComponent } from "./favorite-snacks/favorite-snacks.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TaskListComponent, FavoriteBooksComponent, ShoppingCartComponent, FavoriteGamesComponent, DrinkListComponent],
+  imports: [RouterOutlet, TaskListComponent, FavoriteBooksComponent, ShoppingCartComponent, FavoriteGamesComponent, DrinkListComponent, FavoriteSnacksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
