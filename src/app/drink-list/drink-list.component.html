@@ -1,0 +1,14 @@
+<ul>
+   @for (drink of drinks(); track $index) {
+    <li (click)="selectDrinks(drink)"> {{ drink.item }} </li>
+   } 
+</ul>
+
+@if (selectedDrinks()) {
+    <div>
+        <h1> {{ selectedDrinks()?.item || 'No Title' }} </h1>
+        <p> {{ selectedDrinks()?.description || 'No Description' }} </p>
+    </div>
+}   @else {
+    <p> Select a Drink! </p>
+}
