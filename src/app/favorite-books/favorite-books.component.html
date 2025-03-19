@@ -1,0 +1,14 @@
+<ul>
+  @for (book of books(); track $index) {
+  <li (click)="selectBook(book)">{{ book.title }}</li>
+  }
+</ul>
+
+@if (selectedBook()) {
+    <div>
+        <h3> {{ selectedBook()?.title || 'No Title' }} </h3>
+        <p> {{ selectedBook()?.description || 'No Description' }} </p>
+    </div>
+}   @else {
+    <p> Select a book to view its contents </p>
+}

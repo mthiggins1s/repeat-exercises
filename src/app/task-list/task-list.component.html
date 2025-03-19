@@ -1,0 +1,14 @@
+<ul>
+    @for (task of tasks(); track $index) {
+        <li (click)="selectTask(task)"> {{ task.title }} </li>
+    }
+</ul>
+
+@if (selectedTask()) {
+    <div>
+        <h3> {{ selectedTask()?.title || 'No Title' }} </h3>
+        <p> {{ selectedTask()?.description || 'No Description' }} </p>
+    </div>
+} @else {
+    <p> Select a task to view details </p>
+}
